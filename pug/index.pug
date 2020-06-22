@@ -1,0 +1,134 @@
+- const pageID = "top";
+doctype html
+html(lang="ja")
+
+  include _includes/_head.pug
+  body
+    .l-wrapper
+      include _includes/_header.pug
+      main
+        //main-visual
+        section.c-main-visual
+          .c-main-visual__text
+            img.pc-only(src=assetsPath + '/images/top/text-main-visual.png' alt="全世界で人気沸騰！気軽にできて、楽しく爽快！新感覚スポーツ『パデル』！")
+            img.sp-only(src=assetsPath + '/images/top/text-main-visual-sp.png' alt="全世界で人気沸騰！気軽にできて、楽しく爽快！新感覚スポーツ『パデル』！")
+          .c-main-visual__slider
+            .c-main-visual__slider__photo
+              .c-main-visual__slider__inner.img-bg.pc-only
+                img(src=assetsPath + '/images/top/main-visual1.jpg' alt="")
+              .c-main-visual__slider__inner.sp-only
+                img(src=assetsPath + '/images/top/main-visual1-sp.jpg' alt="")
+            .c-main-visual__slider__photo
+              .c-main-visual__slider__inner.img-bg.pc-only
+                img(src=assetsPath + '/images/top/main-visual2.jpg' alt="")
+              .c-main-visual__slider__inner.sp-only
+                img(src=assetsPath + '/images/top/main-visual2-sp.jpg' alt="")
+            .c-main-visual__slider__photo
+              .c-main-visual__slider__inner.img-bg.pc-only
+                img(src=assetsPath + '/images/top/main-visual3.jpg' alt="")
+              .c-main-visual__slider__inner.sp-only
+                img(src=assetsPath + '/images/top/main-visual3-sp.jpg' alt="")
+            .c-main-visual__slider__photo
+              .c-main-visual__slider__inner.img-bg.pc-only
+                img(src=assetsPath + '/images/top/main-visual4.jpg' alt="")
+              .c-main-visual__slider__inner.sp-only
+                img(src=assetsPath + '/images/top/main-visual4-sp.jpg' alt="")
+          //end main-visual
+        //c-bnr
+        section.c-bnr
+          .l-container
+            a(href="./charm.html").c-bnr__items
+              .img-bg
+                img(src=assetsPath + '/images/top/img-bnr1.jpg' alt="")
+              .c-bnr__items__list
+                h2.c-title.c-title--02 ABOUT
+                .text パデルを知る
+            a(href="./let_padel.html").c-bnr__items
+              .img-bg
+                img(src=assetsPath + '/images/top/img-bnr2.jpg' alt="")
+              .c-bnr__items__list
+                h2.c-title.c-title--02 PLAY
+                .text パデルをしよう
+            a(href="./competition.html").c-bnr__items
+              .img-bg
+                img(src=assetsPath + '/images/top/img-bnr3.jpg' alt="")
+              .c-bnr__items__list
+                h2.c-title.c-title--02 TOUR
+                .text 大会に出てみよう
+        //end c-bnr
+        //c-topics
+        section.c-topics
+          .l-container
+            h2.c-title.c-title--01 #[span TOPICS]
+            .swiper-container.gallery-top
+              .swiper-wrapper
+                .swiper-slide
+                  .imgs
+                    img(src=assetsPath + '/images/top/img-topic1.jpg' alt="")
+                    .text この部分はキャンプションテキストが入ります？ 任意のテキストに置き換えてお使いください。
+                .swiper-slide
+                  .imgs
+                    img(src=assetsPath + '/images/no-img.jpg' alt="")
+                    .text この部分はキャンプションテキストが入ります？ 任意のテキストに置き換えてお使いください。
+                .swiper-slide
+                  .imgs
+                    img(src=assetsPath + '/images/no-img.jpg' alt="")
+                    .text test
+                .swiper-slide
+                  .imgs
+                    img(src=assetsPath + '/images/no-img.jpg' alt="")
+                    .text test2
+              .swiper-button-next.sp-only
+              .swiper-button-prev.sp-only
+              .swiper-pagination.sp-only
+            .swiper-container.gallery-thumbs
+              .swiper-wrapper
+                .swiper-slide.img-bg
+                  img(src=assetsPath + '/images/top/img-topic1.jpg' alt="")
+                .swiper-slide.img-bg
+                  img(src=assetsPath + '/images/no-img.jpg' alt="")
+                .swiper-slide.img-bg
+                  img(src=assetsPath + '/images/no-img.jpg' alt="")
+                .swiper-slide.img-bg
+                  img(src=assetsPath + '/images/no-img.jpg' alt="")
+        //end c-topics
+        //c-new
+        section.c-news
+          .l-container
+            h2.c-title.c-title--01 #[span NEWS]
+            include _contents/_post1.pug
+        //end c-news
+        //c-intro
+        section.c-intro
+          .l-container
+            .c-intro__items
+              h2.c-title.c-title--03 #[span.border パデルってなに？]
+              .c-intro__items__img
+                img(src=assetsPath + '/images/top/img-intro1.jpg' alt="")
+              .c-intro__items__text 1970年代にスペインで生まれたテニスとスカッシュをMIXしたラケットスポーツです。ヨーロッパや南米で大人気のスポーツです。スペインではサッカーに続き2番目に人気のスポーツです。
+            .c-intro__items
+              h2.c-title.c-title--03 #[span.border 初めてでも安心！]
+              .c-intro__items__img
+                img(src=assetsPath + '/images/top/img-intro2.jpg' alt="")
+              .c-intro__items__text パデルコートには貸出用のラケットとボールが用意されています。
+                br
+                |施設スタッフがルールやラケットの使い方など、楽しく安全にプレーできるようにオリエンテーションをします。
+            .c-intro__items
+              h2.c-title.c-title--03 #[span.border 名誉会長はあのキャプテン翼の著者！]
+              .c-intro__items__img
+                img(src=assetsPath + '/images/top/img-intro3.jpg' alt="")
+              .c-intro__items__text 高橋陽一先生が日本パデル協会名誉会長です。スペインでパデルに出会い、日本でも定期的にパデルを楽しんでいます。年に一回「高橋陽一カップ」を開催しています！
+        //end c-intro
+
+        //c-sponsors
+        section.c-sponsors
+          .l-container
+            h2.c-title.c-title--01 #[span スポンサー一覧]
+            include _contents/_sponsors.pug
+        //end c-sponsors
+      include _includes/_footer.pug
+      //js
+      each items in pagesJsFiles
+        script(src=assetsPath + items)
+
+

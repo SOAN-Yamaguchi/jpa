@@ -1,0 +1,81 @@
+- const pageID = "members";
+doctype html
+html(lang="ja")
+
+  include _includes/_head.pug
+  body
+    .l-wrapper
+        include _includes/_header.pug
+        //breadcrumbs
+        include _includes/_breadcrumbs.pug
+        +breadcrumbs(['ホーム ' ],'会員・スポンサー一覧')
+        main
+            //c-registration
+            section.c-members
+                .l-container
+                    h2.c-title.c-title--01 #[span 会員・スポンサー一覧]
+                    .c-sponsors
+                        h3.c-title.c-title--04 スポンサー一覧
+                        include _contents/_sponsors.pug
+
+                    .c-members__tb
+                        h3.c-title.c-title--04 正会員
+                        table.c-table.c-table--01
+                            tr.t-pc
+                                th 社名
+                                th 事業内容
+                                th 住所
+                                th WEBサイト
+                            tr
+                                th.t-sp 社名／事業内容／住所／WEBサイト
+                                td 株式会社Padel Asia
+                                td パデル施設の運営（パデル東京、パデル＆フットサル晴れのち晴れ）
+                                td 〒101-0026
+                                    br
+                                    |東京都千代田区東京都千代田区神田佐久間河岸78-3
+                                    br
+                                    |柴田ビル2F
+                                td
+                                    a.c-link(href="#") Padel Asia
+                                    a.c-link(href="#") パデル東京
+                                    a.c-link(href="#") パデル＆フットサル　晴れのち
+                                    a.c-link(href="#") 晴れ
+                            tr
+                                th.t-sp 社名／事業内容／住所／WEBサイト
+                                td オーズクリエイト株式会社
+                                td ファッション
+                                td 〒102-0075
+                                    br
+                                    |東京都千代田区三番町
+                                    br
+                                    |7-13-102
+                                td
+                                    a.c-link(href="#") HP
+                                    a.c-link(href="#") RICCOMO
+                    .c-members__tb
+                        h3.c-title.c-title--04 賛助会員
+                        table.c-table.c-table--01
+                            tr.t-pc
+                                th 社名
+                                th 事業内容
+                                th 住所
+                                th WEBサイト
+                            tr
+                                th.t-sp 社名／事業内容／住所／WEBサイト
+                                td 株式会社mediba
+                                td auメディアを中心に、広告も含めたメディアに関わるビジネス全般の企画立案、開発および制作、運用を行っています。
+                                td 〒〒150-0002
+                                    br
+                                    |東京都渋谷区渋谷2-21-1 渋谷ヒカリエ31 階（本社
+                                td
+                                    a.c-link(href="#") HP
+                                    a.c-link(href="#") SCOREMATCH
+                                    a.c-link(href="#") スコア管理アプリ
+                                    |[SCORE MATCH]でスコアをつけて友達と繋がりランキングを競おう！
+            //end c-registration
+        include _includes/_footer.pug
+    //js
+    each items in pagesJsFiles
+      script(src=assetsPath + items)
+
+

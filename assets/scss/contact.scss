@@ -1,0 +1,55 @@
+@import '0_base/vars';
+@import '0_base/mixin';
+/*------------------------------------------------------------
+Css of contact pages
+------------------------------------------------------------*/
+.c-contact{
+    &__list{
+        margin-top: 50px;
+        .text{
+            margin-top: 30px;
+        }
+        .c-table--01{
+            @include breakpoint(sp) {
+                margin-top: 30px;
+            }
+            tr{
+                @include breakpoint(sp) {
+                    margin-top: 0;
+                }
+            }
+            td{
+                &:first-child{
+                    font-weight: bold;
+                    width: 220px;
+                    background-color: $whiteSmoke2;
+                    @include breakpoint(sp) {
+                        width: 100%;
+                        padding: 9px 10px;
+                    }
+                }
+                p{
+                    display: flex;
+                    span{
+                        width: 35px;
+                    }
+                }
+            }
+        }
+    }
+    .c-btn--01{
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        background-color: $white;
+        cursor: pointer;
+        margin-top: 30px;
+        &:hover{
+            background-color: $red;
+            color:$white
+        }
+        &:after, &:before{
+            display: none;
+        }
+    }
+}

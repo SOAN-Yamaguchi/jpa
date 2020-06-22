@@ -1,0 +1,25 @@
+@import '0_base/vars';
+@import '0_base/mixin';
+/*------------------------------------------------------------
+Css of Members pages
+------------------------------------------------------------*/
+.c-members{
+    .c-sponsors{
+        margin-top: 40px;
+    }
+    .c-table.c-table--01{
+        td{
+            width: 230px;
+            &:nth-child(2){
+                font-weight: bold;
+            }
+            @include breakpoint(sp) {
+                width: 100%;
+                padding-top: 20px;
+            }
+        }
+    }
+    &__tb{
+        margin-top: 60px;
+    }
+}

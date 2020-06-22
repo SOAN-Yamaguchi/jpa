@@ -1,0 +1,42 @@
+- const pageID = "contact_us";
+doctype html
+html(lang="ja")
+
+  include _includes/_head.pug
+  body
+    .l-wrapper
+        include _includes/_header.pug
+        //breadcrumbs
+        include _includes/_breadcrumbs.pug
+        +breadcrumbs(['ホーム ' ],'お問い合わせ')
+        main
+            //c-contact
+            section.c-contact
+                .l-container
+                    h2.c-title.c-title--01 #[span お問い合わせ]
+                    .c-contact__list
+                        p.text ご意見、ご感想などがありましたら、以下の欄にご記入の上、送信してください。
+                            br
+                            |また、イベントに関するご質問などもお気軽にお寄せください。
+                        form(action="")
+                            table.c-table.c-table--01
+                                tr
+                                    td お名前
+                                    td
+                                        input(type="text" name="name" placeholder="お名前が入ります")
+                                tr
+                                    td メールアドレス
+                                    td
+                                        input(type="email" name="email" placeholder="メールアドレスが入ります")
+                                tr
+                                    td コメント
+                                    td
+                                        textarea(name="contents" placeholder="コメントが入ります")
+                            button.c-btn.c-btn--01(type="submit") 確認
+            //end c-contact
+        include _includes/_footer.pug
+    //js
+    each items in pagesJsFiles
+      script(src=assetsPath + items)
+
+

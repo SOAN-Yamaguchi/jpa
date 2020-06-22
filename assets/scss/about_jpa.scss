@@ -1,0 +1,57 @@
+@import '0_base/vars';
+@import '0_base/mixin';
+/*------------------------------------------------------------
+Css of about jpa pages
+------------------------------------------------------------*/
+.c-about-jpa{
+    .c-title--01{
+        @include breakpoint(sp) {
+            span{
+                display: block;
+                font-size: 2.4rem;
+                &:after{
+                    bottom: -33px;
+                    width: 160px;
+                }
+            }
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            &:after{
+                bottom: -10px;
+            }
+        }
+    }
+    &__list{
+        margin-top: 50px;
+        .text{
+            margin-top: 30px;
+        }
+        .c-table--01{
+            @include breakpoint(sp) {
+                margin-top: 30px;
+            }
+            tr{
+                @include breakpoint(sp) {
+                    margin-top: 0;
+                }
+            }
+            td{
+                &:first-child{
+                    font-weight: bold;
+                    width: 220px;
+                    background-color: $whiteSmoke2;
+                    @include breakpoint(sp) {
+                        width: 100%;
+                        padding: 9px 10px;
+                    }
+                }
+                p{
+                    display: flex;
+                    span{
+                        width: 35px;
+                    }
+                }
+            }
+        }
+    }
+}

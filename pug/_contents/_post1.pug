@@ -1,0 +1,43 @@
+.c-post.c-post--01
+    //items
+    a(href="#").c-post--01__items
+        .c-post--01__items__img
+            if id =='top'
+                img(src=assetsPath + '/images/no-img.jpg' alt="")
+            if id == "news"
+                span.status NEW
+                img(src=assetsPath + '/images/photo-sample.jpg' alt="")
+        .c-post--01__items__list
+            .text-top
+                if id == 'top'
+                    label.blue お知らせ
+                .date 2020.05.25
+            .title DUNLOP PADEL NAVIに掲載されました
+        .c-post--01__items__text  山口プロの日々の練習方法などが紹介されております。書店コンビニ等で販売中です。この部分はニュースのテキストが入ります。この部分はニュースのテキストが入ります。この部分はニュースのテキストが入ります。この部分 が入ります。この部分はニュースのテキストが入ります。この部分はニュースのテキストが入ります。この部分
+    //end items
+    //items
+    a(href="#").c-post--01__items
+        .c-post--01__items__img
+            img(src=assetsPath + '/images/no-img.jpg' alt="")
+        .c-post--01__items__list
+            .text-top
+                if id == 'top'
+                    label.green イベント
+                .date 2020.05.25
+            .title DUNLOP PADEL NAVIに掲載されました
+        .c-post--01__items__text  山口プロの日々の練習方法などが紹介されております。書店コンビニ等で販売中です。この部分はニュースのテキストが入ります。この部分はニュースのテキストが入ります。この部分はニュースのテキストが入ります。この部分ュースのテキストが入ります。この部分
+    //end items
+    //items
+    a(href="#").c-post--01__items
+        .c-post--01__items__img
+            img(src=assetsPath + '/images/no-img.jpg' alt="")
+        .c-post--01__items__list
+            .text-top
+                if id == 'top'
+                    label.orange 大会情報
+                .date 2020.05.25
+            .title DUNLOP PADEL NAVIに掲載されました
+        .c-post--01__items__text  山口プロの日々の練習方法などが紹介されております。書店コンビニ等で販売中です。この部分はニュースのテキストが入ります。この部分はニュースのテキストが入ります。この部分はニュースのテキストが入ります。この部分 が入ります。この部分はニュースのテキストが入ります。この部分はニュースのテキストが入ります。この部分
+    //end items
+if id == 'top'
+    a(href="./news.html").c-btn.c-btn--01 NEWS 一覧を見る

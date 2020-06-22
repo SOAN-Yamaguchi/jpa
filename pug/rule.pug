@@ -1,0 +1,138 @@
+- const pageID = "rule";
+doctype html
+html(lang="ja")
+
+  include _includes/_head.pug
+  body
+    .l-wrapper
+        include _includes/_header.pug
+        //breadcrumbs
+        nav.c-breadcrumbs
+            .l-container
+                ol.breadcrumb
+                    li.breadcrumb__item
+                        a(href="./") ホーム
+                    li.breadcrumb__item
+                        a(href="./charm.html") パデルを知る
+                    li.breadcrumb__item.active ルール
+        main
+            //c-rule
+            section.c-know-padel.c-know-padel--rule
+                .l-container
+                    ul.c-link-top
+                        li
+                            a(href="./charm.html") 魅力
+                        li
+                            a(href="./rule.html") ルール
+                        li
+                            a(href="./shot.html") ショット
+                    h2.c-title.c-title--01 #[span パデルのルール]
+                    .c-post.c-post--02
+                        .c-youtube
+                            img.c-youtube__iframe(src=assetsPath + "/images/img-youtube.jpg", alt="")
+                        .c-post--02__items
+                            h3.c-title.c-title--04 基本ルール
+                            p
+                                span ・
+                                |2人対2人のダブルス対戦
+                            p
+                                span ・
+                                |ポイン卜の数え方や試合進行はテニスと同じ
+                            p
+                                span ・
+                                |バウンドまたはノーバウンドで相手コートに返球
+                            p
+                                span ・
+                                |強化ガラスや金網に当たったボールも返球可能
+                        .c-post--02__items
+                            h3.c-title.c-title--04 パデルの特殊ルール
+                            .items-child
+                                p
+                                    span 〈１〉
+                                    |コートに入ったボールが１バウンドし、ガラスまたは金網に当たった際、ボールが空中に浮いてる間は相手コートに打ち返すことが可能。
+                                p
+                                    span 〈２〉
+                                    |横壁や後ろ壁を利用し、相手コートに打ち返すことが可能。
+                                .img
+                                    img(src=assetsPath + "/images/know-padel/rule/01.png", alt="")
+                                .img
+                                    img(src=assetsPath + "/images/know-padel/rule/02.png", alt="")
+                        .c-post--02__items
+                            h3.c-title.c-title--04 失点するシチュエーション
+                            .items-child
+                                .img
+                                    p
+                                        span 〈１〉
+                                        | ボールを打ち返す際、自陣コートに2バウンド以上した場合。
+                                    p
+                                        span 〈２〉
+                                        | 打ったボールがネットにかかり、相手コートに入らない場合。
+                                    img(src=assetsPath + "/images/know-padel/rule/03.png", alt="")
+                                .img
+                                    p
+                                        span 〈３〉
+                                        |打ったボールが相手コートのガラスもしくは金網にノーバウンドで当たった場合。
+                                    img(src=assetsPath + "/images/know-padel/rule/04.png", alt="")
+                                .img
+                                    img(src=assetsPath + "/images/know-padel/rule/05.png", alt="")
+                                .img
+                                    img(src=assetsPath + "/images/know-padel/rule/06.png", alt="")
+                        .c-post--02__items
+                            h3.c-title.c-title--04 サーブ
+                            .items-child
+                                p パデルではテニスと同様、2回までサーブできます
+                                p.mt
+                                    span 〈１〉
+                                    |サーブの仕方は以下の通りです。
+                                p.ml
+                                    span a）
+                                    |ボールをワンバウンドさせてからで対角側のサービスコートに入れます
+                                p.ml
+                                    span b）
+                                    |腰より低い位置から打つ必要があります。
+                                p.ml
+                                    span c）
+                                    |ボールを打つ時、サーバーの足がサービスラインを踏まないようにします。
+                                p.ml
+                                    span d）
+                                    |サーブの時、プレイヤーの一足が地面についていなければなりません。
+                                p
+                                    span 〈２〉
+                                    |打ったボールはネットを越え、相手のサービスエリアでワンバウンドしてからレシーバーが打つ必要があります。
+                                .items-child
+                                    .img
+                                        img(src=assetsPath + "/images/know-padel/rule/07.png", alt="")
+                                    .img
+                                        img(src=assetsPath + "/images/know-padel/rule/08.png", alt="")
+                        .c-post--02__items
+                            h3.c-title.c-title--04 サーブフォルト （サーブ失敗）
+                            .items-child
+                                .img
+                                    p
+                                        span 〈１〉
+                                        |相手のサービスエリアにボールが入らなかった場合。
+                                    img(src=assetsPath + "/images/know-padel/rule/09.png", alt="")
+                                .img
+                                    p
+                                        span 〈２〉
+                                        |相手のサービスエリアにボールが入り、バウンドしたボールが金網に当たった場合。
+                                    img(src=assetsPath + "/images/know-padel/rule/10.png", alt="")
+                                .img.mt-2
+                                    p
+                                        span 〈3〉
+                                        |ネットにボールが触れた後、相手のサービスエリアに入らなかった場合やワンバウンド以内に金網に当たった場合
+                        .c-post--02__items
+                            .items-child
+                                h3.c-title.c-title--04 サービスレット（サーブのやり直し）
+                                p サーブで打ったボールがネットやポストにボールが触れた後でも、相手のサービスエリアに入り、2バウンドする前に金網に当たらなかった場合は再度サーブを打てます。
+                                    br
+                                    |1ポイントで2度サーブが打てる中、1回目のサーブでレットであれば、もう2度サーブが打てます。 2回目のサーブの時、レットであれば、もう1度サーブが打てます。
+                                img(src=assetsPath + "/images/know-padel/rule/11.png", alt="")
+                    //post
+            //end rule
+        include _includes/_footer.pug
+    //js
+    each items in pagesJsFiles
+      script(src=assetsPath + items)
+
+

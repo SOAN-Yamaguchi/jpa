@@ -1,0 +1,44 @@
+/* layout
+------------------------------------------------------------*/
+
+//-------------------------------------------------------
+.l-wrapper{
+	position:relative;
+	min-height: 100%;
+}
+.l-container{
+	width: $baseWidth;
+	margin: 0 auto;
+	@include breakpoint(sp) {
+		width: 100%;
+		padding: 0 15px;
+		box-sizing: border-box;
+	}
+}
+
+.sp-only {
+	display: none;
+}
+@include breakpoint(sp) {
+	.pc-only {
+		display: none;
+	}
+	.sp-only{
+		display: block;
+	}
+}
+.isOverflow{
+	@include breakpoint(sp) {
+		overflow: hidden;
+	}
+}
+main{
+	margin-top: 53px;
+	padding-bottom: 375px;
+	@include breakpoint(sp) {
+		margin-top: 33px;
+		padding-bottom:530px;
+	}
+}
+
+//-------------------------------------------------------

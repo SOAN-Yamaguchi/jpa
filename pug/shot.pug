@@ -1,0 +1,130 @@
+- const pageID = "shot";
+doctype html
+html(lang="ja")
+
+  include _includes/_head.pug
+  body
+    .l-wrapper
+        include _includes/_header.pug
+        //breadcrumbs
+        nav.c-breadcrumbs
+            .l-container
+                ol.breadcrumb
+                    li.breadcrumb__item
+                        a(href="./") ホーム
+                    li.breadcrumb__item
+                        a(href="./charm.html") パデルを知る
+                    li.breadcrumb__item.active ショット
+        main
+            //c-rule
+            section.c-know-padel.c-know-padel--shot
+                .l-container
+                    ul.c-link-top
+                        li
+                            a(href="./charm.html") 魅力
+                        li
+                            a(href="./rule.html") ルール
+                        li
+                            a(href="./shot.html") ショット
+                    h2.c-title.c-title--01 #[span パデルのショット]
+                    //-post
+                    .c-post.c-post--02
+                        .c-post--02__items
+                            h3.c-title.c-title--04 これさえ知ればパデルができる！（基礎編）
+                            .child
+                                .c-youtube
+                                    img.c-youtube__iframe(src=assetsPath + "/images/img-youtube.jpg", alt="")
+                                    .list
+                                        .c-youtube__title 1. ラケットの握り方
+                                        .c-youtube__text ラケットに付いているヒモに手首を通してください。握り方は基本的には包丁握りと同じです。ショットによって、グリップの握り方を変えていくこともあります。
+                                .c-youtube
+                                    img.c-youtube__iframe(src=assetsPath + "/images/img-youtube.jpg", alt="")
+                                    .list
+                                        .c-youtube__title 2. レボテ
+                                        .c-youtube__text  パデル特有のショット。レボ
+                            .child
+                                .c-youtube
+                                    img.c-youtube__iframe(src=assetsPath + "/images/img-youtube.jpg", alt="")
+                                    .list
+                                        .c-youtube__title 3. ロブ
+                                        .c-youtube__text 相手の頭を越すショット。
+                                .c-youtube
+                                    img.c-youtube__iframe(src=assetsPath + "/images/img-youtube.jpg", alt="")
+                                    .list
+                                        .c-youtube__title 4. ボレー
+                                        .c-youtube__text  ノーバウンドで打つショット
+                            .child
+                                .c-youtube
+                                    img.c-youtube__iframe(src=assetsPath + "/images/img-youtube.jpg", alt="")
+                                    .list
+                                        .c-youtube__title 5. レマテ
+                                        .c-youtube__text  テニスでいう「スマッシュ」です。上からたたく攻撃的なショットとなります。
+                                .c-youtube
+                                    img.c-youtube__iframe(src=assetsPath + "/images/img-youtube.jpg", alt="")
+                                    .list
+                                        .c-youtube__title 6. バンデッハ
+                                        .c-youtube__text パデル特有のショット。スマッシュとボレーのちょうど中間に位置するコントロールショットでスマッシュに比べ低い打点で打つため、ガラスに当たったショットが弾まず次の攻撃につなげることができるショット。
+                        .c-post--02__items
+                            h3.c-title.c-title--04 挑戦してみよう（中級編
+                            .child
+                                .c-youtube
+                                    img.c-youtube__iframe(src=assetsPath + "/images/img-youtube.jpg", alt="")
+                                    .list
+                                        .c-youtube__title 7. ドブレパレット
+                                        .c-youtube__text 2つの壁にレボテしたボールの返球をするショット
+                                .c-youtube
+                                    img.c-youtube__iframe(src=assetsPath + "/images/img-youtube.jpg", alt="")
+                                    .list
+                                        .c-youtube__title 8. チキータ
+                                        .c-youtube__text  相手の足元にボールを沈めるショット。緩急をつけることで、相手の返球が甘くなる可能性があります
+                        .c-post--02__items
+                            h3.c-title.c-title--04 極めてみよう（上級編）
+                            .child
+                                .c-youtube
+                                    img.c-youtube__iframe(src=assetsPath + "/images/img-youtube.jpg", alt="")
+                                    .list
+                                        .c-youtube__title 11. コントララテラル
+                                        .c-youtube__text 返球の際、サイドの壁を使って相手コートに返球するショット
+                                .c-youtube
+                                    img.c-youtube__iframe(src=assetsPath + "/images/img-youtube.jpg", alt="")
+                                    .list
+                                        .c-youtube__title 12. ビボラ
+                                        .c-youtube__text ネットプレーの際、背丈ぐらいの高さのボールにスライスをかけ、ボールを弾ませない打ち方。バンデッハに似ていますが、ビボラは、スピートとスライスを重視するため、フィニッシュの打ち方です。
+                            .child
+                                .c-youtube
+                                    img.c-youtube__iframe(src=assetsPath + "/images/img-youtube.jpg", alt="")
+                                    .list
+                                        .c-youtube__title 13. リフタード
+                                        .c-youtube__text テニスのスピンサーブのような打ち方をして、横の壁や金網を狙うショット
+                                .c-youtube
+                                    img.c-youtube__iframe(src=assetsPath + "/images/img-youtube.jpg", alt="")
+                                    .list
+                                        .c-youtube__title 14. バッハーダ・デ・パレッド
+                                        .c-youtube__text 高いレボテが発生した際、スマッシュのように上から下に振り下ろす攻撃的なショット
+                            .child
+                                .c-youtube
+                                    img.c-youtube__iframe(src=assetsPath + "/images/img-youtube.jpg", alt="")
+                                    .list
+                                        .c-youtube__title 15. サリダデパレッド
+                                        .c-youtube__text 高いレボテが発生した際、顔の高さ当たりで打つ攻撃的なショット
+                        .c-post--02__items
+                            h3.c-title.c-title--04 世界へ挑戦（スペシャル編)
+                            .child
+                                .c-youtube
+                                    img.c-youtube__iframe(src=assetsPath + "/images/img-youtube.jpg", alt="")
+                                    .list
+                                        .c-youtube__title 16. カウンターアタック
+                                        .c-youtube__text 相手がレマテを打った際に、自陣の壁から跳ね返ってきた球に対してネット際で決めるショット
+                                .c-youtube
+                                    img.c-youtube__iframe(src=assetsPath + "/images/img-youtube.jpg", alt="")
+                                    .list
+                                        .c-youtube__title 17. ドルミローナ
+                                        .c-youtube__text 相手がレマテを打ってきた際、レボテのボールをネット際で「寝かす」ショット。その名もスペイン語で「寝過ぎ」と言います
+                    //post
+            //end rule
+        include _includes/_footer.pug
+    //js
+    each items in pagesJsFiles
+      script(src=assetsPath + items)
+
+

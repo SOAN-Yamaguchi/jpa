@@ -1,0 +1,22 @@
+@import '0_base/vars';
+@import '0_base/mixin';
+/*------------------------------------------------------------
+Css of News pages
+------------------------------------------------------------*/
+
+.c-news{
+    &__list{
+        margin-top: 53px;
+        @include breakpoint(sp) {
+            margin-top: 33px;
+        }
+    }
+    .c-btn{
+        &--01{
+            margin-top: 60px;
+            @include breakpoint(sp) {
+                margin-top: 30px;
+            }
+        }
+    }
+}

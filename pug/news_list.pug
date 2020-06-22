@@ -1,0 +1,61 @@
+- const pageID = "news_list";
+doctype html
+html(lang="ja")
+
+  include _includes/_head.pug
+  body
+    .l-wrapper
+        include _includes/_header.pug
+        //breadcrumbs
+        nav.c-breadcrumbs
+            .l-container
+                ol.breadcrumb
+                    li.breadcrumb__item
+                        a(href="./") ホーム
+                    li.breadcrumb__item
+                        a(href="./news.html") NEWS
+                    li.breadcrumb__item.active お知らせ一覧
+        main
+            //c-news-list
+            section.c-news.c-news--list
+                .l-container
+                    //list
+                    .c-news__list
+                        h2.c-title.c-title--01#link1 #[span.blue お知らせ一覧]
+                        .c-post.c-post--01
+                            - for (var x = 0; x < 5; x++)
+                                //items
+                                a(href="#").c-post--01__items
+                                    .c-post--01__items__img
+                                        span.status NEW
+                                        img(src=assetsPath + '/images/photo-sample.jpg' alt="")
+                                    .c-post--01__items__list
+                                        .text-top
+                                            .date 2020.05.25
+                                        .title DUNLOP PADEL NAVIに掲載されました
+                                    .c-post--01__items__text  山口プロの日々の練習方法などが紹介されております。書店コンビニ等で販売中です。この部分はニュースのテキストが入ります。この部分はニュースのテキストが入ります。この部分はニュースのテキストが入ります。この部分 が入ります。この部分はニュースのテキストが入ります。この部分はニュースのテキストが入ります。この部分
+                                //end items
+                                //items
+                                a(href="#").c-post--01__items
+                                    .c-post--01__items__img
+                                        img(src=assetsPath + '/images/no-img.jpg' alt="")
+                                    .c-post--01__items__list
+                                        .text-top
+                                            if id == 'top'
+                                                label.green イベント
+                                            .date 2020.05.25
+                                        .title DUNLOP PADEL NAVIに掲載されました
+                                    .c-post--01__items__text  山口プロの日々の練習方法などが紹介されております。書店コンビニ等で販売中です。この部分はニュースのテキストが入ります。この部分はニュースのテキストが入ります。この部分はニュースのテキストが入ります。この部分ュースのテキストが入ります。この部分
+                                //end items
+                    //end list
+
+                    // pagination
+                    include _includes/_pagination.pug
+                    //end pagination
+            //c-news-list
+        include _includes/_footer.pug
+    //js
+    each items in pagesJsFiles
+      script(src=assetsPath + items)
+
+

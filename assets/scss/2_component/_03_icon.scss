@@ -1,0 +1,46 @@
+/*------------------------------------------------------------
+icon
+------------------------------------------------------------*/
+
+.c-icon__link{
+    a{
+        height: 44px;
+        display: flex;
+        border-radius: 50%;
+        width: 44px;
+        align-items: center;
+        justify-content: center;
+        color:$white;
+        font-size: 2.5rem;
+        @include breakpoint(sp) {
+            width: 35px;
+            height: 35px;
+            font-size: 1.8rem;
+        }
+        &.tw{
+            background-color: #1da1f2;
+        }
+        &.fb{
+            background-color: #3c5a99;
+        }
+        &.ins{
+            background-color: #e1306c;
+            .st0{
+                fill: $white !important;
+            }
+            svg{
+                width: 20px !important;
+                height: 20px !important;
+            }
+        }
+        &.yt{
+            background-color: #da1725;
+        }
+        img{
+            height: 44px;
+            @include breakpoint(sp) {
+                height: 35px;
+            }
+        }
+    }
+}

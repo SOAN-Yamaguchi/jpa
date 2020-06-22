@@ -1,0 +1,156 @@
+/*------------------------------------------------------------
+Css of coat list pages
+------------------------------------------------------------*/
+.c-coat-list__post {
+  margin-top: 40px;
+}
+
+.c-coat-list__post:nth-child(2) {
+  margin-top: 50px;
+}
+
+.c-coat-list__post .post__items {
+  background-color: #faf8f2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-coat-list__post .post__items {
+    display: block;
+    padding: 15px;
+  }
+}
+
+.c-coat-list__post .post__items__img {
+  width: 395px;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-coat-list__post .post__items__img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+.c-coat-list__post .post__items__img img {
+  width: 100%;
+}
+
+.c-coat-list__post .post__items__list {
+  width: 395px;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-coat-list__post .post__items__list {
+    width: 100%;
+  }
+}
+
+.c-coat-list__post .post__items__list .title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 28px;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-coat-list__post .post__items__list .title {
+    font-size: 1.4rem;
+    line-height: 22px;
+  }
+}
+
+.c-coat-list__post .post__items__list .info {
+  margin-top: 10px;
+}
+
+.c-coat-list__post .post__items__list .info span {
+  display: block;
+}
+
+.c-coat-list__post .post__items__list .info .c-link {
+  text-decoration: none;
+}
+
+.c-coat-list__post .post__items__list .text {
+  margin-top: 10px;
+}
+
+.c-coat-list__post .post__items .list-link {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 45px;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-coat-list__post .post__items .list-link {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+}
+
+.c-coat-list__post .post__items .list-link .c-icon__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-coat-list__post .post__items .list-link a {
+  margin-left: 15px;
+  width: 35px;
+  height: 35px;
+  font-size: 1.8rem;
+}
+
+.c-coat-list__post .post__items .list-link a.ins svg {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.c-coat-list__post .post__items .list-link a:first-child {
+  margin-left: 0;
+}
+
+.c-coat-list__post .post__items .list-link a img {
+  width: 36px;
+}
+
+.c-coat-list__post .post__items .btn-map {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 45px 0 0 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-coat-list__post .post__items .btn-map {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .c-coat-list__post .post__items .btn-map .c-btn--02 {
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=coat_list.css.map */

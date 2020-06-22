@@ -1,0 +1,54 @@
+/* Breadcrumb
+------------------------------------------------------------*/
+.c-breadcrumbs{
+    margin-top: 80px;
+    background-color: $red;
+    @include breakpoint(sp) {
+        margin-top: 60px;
+    }
+    .breadcrumb{
+        display: flex;
+        padding: 9px 0;
+        color:$white;
+        a{
+            text-decoration: underline;
+            text-underline-position: under;
+            font-weight: normal;
+        }
+        &__item{
+            a{
+                &:after{
+                    content: ">";
+                    display: inline-block;
+                    margin: 0 12px;
+                }
+            }
+        }
+        li{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-weight: bold;
+            &:last-child{
+                position: relative;
+                &:after{
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-left: 8px solid transparent;
+                    border-right: 8px solid transparent;
+                    border-top: 16px solid $red;
+                    transform: translate(-50%,0);
+                    left: 50%;
+                    bottom: -23px;
+                    position: absolute;
+                    @include breakpoint(sp) {
+                        border-left: 6px solid transparent;
+                        border-right: 6px solid transparent;
+                        border-top: 12px solid $red;
+                        bottom: -20px;
+                    }
+                }
+            }
+        }
+    }
+}

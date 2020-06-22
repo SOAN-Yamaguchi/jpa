@@ -1,0 +1,37 @@
+/*------------------------------------------------------------
+Backtop
+------------------------------------------------------------*/
+
+.c-back-to-top{
+    height: 60px;
+    width: 60px;
+    background: $red;
+    cursor: pointer;
+    // display: none;
+    position: fixed;
+    border-radius: 50%;
+    right: 20px;
+    z-index: 10;
+    bottom: 20px;
+    font-size: 4rem;
+    display: none;
+    box-sizing: border-box;
+    color:$white;
+    transition: 300ms;
+    span{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    &:hover{
+       opacity: .8;
+    }
+    @include breakpoint(sp) {
+        right: 15px;
+        bottom: 15px;
+        width: 50px;
+        height: 50px;
+        font-size: 3rem;
+    }
+}

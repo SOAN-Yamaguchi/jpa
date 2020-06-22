@@ -1,0 +1,111 @@
+@import '0_base/vars';
+@import '0_base/mixin';
+/*------------------------------------------------------------
+Css of coat list pages
+------------------------------------------------------------*/
+.c-coat-list{
+    &__post{
+        margin-top: 40px;
+        &:nth-child(2){
+            margin-top: 50px;
+        }
+        .post__items{
+            background-color: $whiteSmoke;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            padding: 30px;
+            margin-top: 20px;
+            @include breakpoint(sp) {
+                display: block;
+                padding: 15px;
+            }
+            &__img{
+                width: 395px;
+                @include breakpoint(sp) {
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            &__list{
+                width: 395px;
+                @include breakpoint(sp) {
+                    width: 100%;
+                }
+                .title{
+                    font-weight: bold;
+                    font-size: 1.6rem;
+                    line-height: 28px;
+                    @include breakpoint(sp) {
+                        font-size: 1.4rem;
+                        line-height: 22px;
+                    }
+                }
+                .info{
+                    margin-top: 10px;
+                    span{
+                        display: block;
+                    }
+                    .c-link{
+                        text-decoration: none;
+                    }
+                }
+                .text{
+                    margin-top: 10px;
+                }
+            }
+            .list-link{
+                display: inline-block;
+                vertical-align: middle;
+                margin-top:45px;
+                @include breakpoint(sp) {
+                    width: fit-content;
+                    display: flex;
+                    margin: 0 auto;
+                    margin-top: 25px;
+                }
+                .c-icon__link{
+                    display: flex;
+                }
+                a{
+                    margin-left: 15px;
+                    width: 35px;
+                    height: 35px;
+                    font-size: 1.8rem;
+                    &.ins{
+                        svg{
+                            width: 18px !important;
+                            height: 18px !important;
+                        }
+                    }
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                    img{
+                        width: 36px;
+                    }
+                }
+            }
+            .btn-map{
+                display: inline-block;
+                vertical-align: middle;
+                margin: 45px 0 0 30px;
+                @include breakpoint(sp) {
+                    display: block;
+                    margin: 0 auto;
+                    margin-top: 20px;
+                    width: 100%;
+                    .c-btn--02{
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,51 @@
+- const pageID = "competition";
+doctype html
+html(lang="ja")
+
+  include _includes/_head.pug
+  body
+    .l-wrapper
+        include _includes/_header.pug
+        //breadcrumbs
+        include _includes/_breadcrumbs.pug
+        +breadcrumbs(['ホーム '],'大会に出てみよう')
+        main
+            //c-competition
+            section.c-competition
+                .l-container
+                    h2.c-title.c-title--01 #[span 大会に出てみよう]
+                    .c-competition__list
+                        .c-competition__list__items
+                            .imgs
+                                img(src=assetsPath + '/images/competition/01.png', alt="")
+                            .list
+                                p 日本パデル協会では、日本国内における協会主催の公式大会「ジャパンパデルツアー（JPT）」を開催しています。全日本選手権、マスター大会、オープン大会、チャレンジ大会とカテゴリーが分かれています。
+                                    br
+                                    |全国各地の施設で大会が開催されています。
+                                ul.c-list-type
+                                    li  エントリー、ランキング、スケジュールは
+                                        a.c-link(href="#") Padel Player System（PPS）
+                                        |から！
+                                    li エントリー方法は
+                                        a.c-link(href="#") こちら
+                                    li 2020年度日本パデル協会主催大会概要は
+                                        a.c-link(href="#") こちら
+                                    li JPT公式トーナメント競技規則は
+                                        a.c-link(href="#") こちら
+                                    li Jコンプライアンス情報は
+                                        a.c-link(href="#") こちら
+                        .c-competition__list__items
+                            .imgs
+                                img(src=assetsPath + '/images/competition/02.png', alt="")
+                            .list
+                                p 国際パデル連盟主催となる国際大会を日本国内で開催しています。
+                                p 大会規定は
+                                    a.c-link(href="#") こちら
+
+            //end c-competition
+        include _includes/_footer.pug
+    //js
+    each items in pagesJsFiles
+      script(src=assetsPath + items)
+
+

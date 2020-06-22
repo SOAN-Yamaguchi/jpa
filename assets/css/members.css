@@ -1,0 +1,26 @@
+/*------------------------------------------------------------
+Css of Members pages
+------------------------------------------------------------*/
+.c-members .c-sponsors {
+  margin-top: 40px;
+}
+
+.c-members .c-table.c-table--01 td {
+  width: 230px;
+}
+
+.c-members .c-table.c-table--01 td:nth-child(2) {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-members .c-table.c-table--01 td {
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+
+.c-members__tb {
+  margin-top: 60px;
+}
+/*# sourceMappingURL=members.css.map */

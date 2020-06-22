@@ -1,0 +1,180 @@
+/*------------------------------------------------------------
+Css of charm, shot, rule pages
+------------------------------------------------------------*/
+.c-know-padel .c-title--01 {
+  margin-top: 53px;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-know-padel .c-title--01 {
+    margin-top: 33px;
+  }
+}
+
+.c-know-padel--charm .c-title.mb-1 {
+  margin-bottom: 30px;
+}
+
+.c-know-padel--charm .c-post--02:last-child .c-post--02__items {
+  margin-top: 30px;
+}
+
+.c-know-padel--charm .c-list--imgs {
+  *zoom: 1;
+}
+
+.c-know-padel--charm .c-list--imgs:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.c-know-padel--charm .c-list--imgs img {
+  width: 300px;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-know-padel--charm .c-list--imgs img {
+    width: 33.33%;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.c-know-padel--charm .c-list--imgs img:nth-child(3n+1) {
+  clear: left;
+  margin-left: 0;
+}
+
+.c-know-padel--rule .c-title--04 {
+  margin-bottom: 28px;
+}
+
+.c-know-padel--rule .c-post--02__items {
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-know-padel--rule .c-post--02__items {
+    margin-top: 60px;
+  }
+}
+
+.c-know-padel--rule .c-post--02__items .items-child {
+  *zoom: 1;
+}
+
+.c-know-padel--rule .c-post--02__items .items-child:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.c-know-padel--rule .c-post--02__items p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-know-padel--rule .c-post--02__items p.mt {
+  margin-top: 5px;
+}
+
+.c-know-padel--rule .c-post--02__items p.ml {
+  padding-left: 20px;
+}
+
+.c-know-padel--rule .c-post--02 .img {
+  float: left;
+  width: 450px;
+  margin-left: 38px;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-know-padel--rule .c-post--02 .img {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .c-know-padel--rule .c-post--02 .img:first-child {
+    margin-top: 0;
+  }
+}
+
+.c-know-padel--rule .c-post--02 .img.mt-2 {
+  margin-top: 60px;
+}
+
+.c-know-padel--rule .c-post--02 .img img {
+  margin: 0 auto;
+  display: table;
+  width: auto;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-know-padel--rule .c-post--02 .img img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.c-know-padel--rule .c-post--02 .img:nth-child(2n+1) {
+  clear: left;
+  margin-left: 0;
+}
+
+.c-know-padel--shot .child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-know-padel--shot .child {
+    display: block;
+  }
+}
+
+.c-know-padel--shot .c-title--04 {
+  margin-bottom: 10px;
+}
+
+.c-know-padel--shot .c-youtube {
+  width: 460px;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-know-padel--shot .c-youtube {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .c-know-padel--shot .c-youtube:first-child {
+    margin-top: 0;
+  }
+}
+
+.c-know-padel--shot .c-youtube__title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding-top: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-know-padel--shot .c-youtube__title {
+    font-size: 1.4rem;
+  }
+}
+
+.c-know-padel--shot .c-youtube__text {
+  padding-top: 10px;
+}
+/*# sourceMappingURL=know_padel.css.map */

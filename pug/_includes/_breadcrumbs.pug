@@ -1,0 +1,13 @@
+mixin breadcrumbs(items, last)
+  nav.c-breadcrumbs
+    .l-container
+      ol.breadcrumb
+        each item in items
+          li.breadcrumb__item
+            if (items.length === 1)
+              a(href="./")= item
+            else
+              a(href="./" )= item
+        if last
+          li.breadcrumb__item.active= last
+        else

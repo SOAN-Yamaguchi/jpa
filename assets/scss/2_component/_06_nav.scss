@@ -1,0 +1,142 @@
+/*------------------------------------------------------------
+navi
+------------------------------------------------------------*/
+
+.c-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include breakpoint(sp) {
+        padding: 10px 15px;
+        background-color: $white;
+    }
+	ul{
+        width: 740px;
+        display: flex;
+        justify-content: space-between;
+        font-family: $mb31;
+        @include breakpoint(sp) {
+            position: absolute;
+            left:0;
+            top: 80px;
+            width: 100%;
+            display: none;
+            z-index: 10;
+            text-align: center;
+            &.sub-menu{
+                max-height: calc(100vh - 100px);
+                padding-bottom: 50px;
+                overflow-y: scroll;
+                -webkit-overflow-scrolling:touch;
+            }
+            &.show{
+                display: block;
+            }
+        }
+        li{
+            display: inline-block;
+            position: relative;
+            padding: 28.5px 0;
+            @include breakpoint(sp) {
+                display: block;
+                width: 100%;
+                padding: 0;
+                // &.icon-sub{
+                //     >a{
+                       
+                //     }
+                // }
+            }
+            .child_menu_button{
+                width: 55px;
+                height: 55px;
+                position: absolute;
+                right: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 0;
+                @media only screen and (min-width: 768px){
+                    display: none !important;
+                }
+                .icon{
+                    &:after{
+                        content:"\f107";
+                        font-family: FontAwesome;
+                        color:$white;
+                        font-size: 2.5rem;
+                    }
+                }
+                &--close{
+                    .icon{
+                        &:after{
+                            content:"\f106";
+                        }
+                    }
+                }
+            }
+            a{
+                display: block;
+                font-size: 1.4rem;
+                letter-spacing: 0.06rem;
+                color:$nightRider;
+                transition-property: background-color, color;
+                transition-duration: 0.2s;
+                transition-timing-function: ease;
+                &:hover{
+                    color: $red;
+                    @include breakpoint(sp) {
+                        color: $white !important;
+                    }
+                }
+                @include breakpoint(sp) {
+                    font-size: 1.8rem;
+                    text-shadow: none;
+                    padding: 13px 0;
+                    color: $white !important;
+                }
+            }
+            &:hover{
+                ul{
+                    visibility:initial;
+                    @media only screen and (min-width: 768px){
+                        display: block !important;
+                    }
+                }
+            }
+            ul{
+                position: absolute;
+                width: 100%;
+                min-width: 240px;
+                padding: 0 20px ;
+                background:rgba(255,255,255,.8);
+                left: -22px;
+                top: 80px;
+                visibility: hidden;
+                transition:0.5ms;
+                display: block;
+                @include breakpoint(sp) {
+                    position: static;
+                    visibility:initial;
+                    display: none;
+                    background-color: transparent !important;
+                    transition: none;
+                    padding: 0;
+                }
+                li{
+                    display: block;
+                    padding: 0;
+                    &:first-child{
+                        margin-top: -25px;
+                        @include breakpoint(sp) {
+                            margin-top: 0;
+                        }
+                    }
+                    a{
+                        padding: 8px 0;
+                    }
+                }
+            }
+        }
+    }
+}

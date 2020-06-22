@@ -1,0 +1,140 @@
+@import '0_base/vars';
+@import '0_base/mixin';
+/*------------------------------------------------------------
+Css of charm, shot, rule pages
+------------------------------------------------------------*/
+.c-know-padel{
+    .c-title{
+        &--01{
+            margin-top: 53px;
+            @include breakpoint(sp) {
+                margin-top: 33px;
+            }
+        }
+    }
+    &--charm{
+        .c-title{
+            &.mb-1{
+                margin-bottom: 30px;
+            }
+        }
+        .c-post--02{
+            &:last-child{
+                .c-post--02__items{
+                    margin-top: 30px;
+                }
+            }
+        }
+        .c-list{
+            &--imgs{
+                @include clear;
+                img{
+                    width: 300px;
+                    float: left;
+                    margin-left: 20px;
+                    margin-bottom: 20px;
+                    @include breakpoint(sp) {
+                        width: 33.33%;
+                        margin-left: 0;
+                        margin-bottom: 0;
+					}
+                    &:nth-child(3n+1){
+                        clear: left;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    &--rule{
+        .c-title--04{
+            margin-bottom: 28px;
+        }
+        .c-post--02{
+            &__items{
+                width: 100%;
+                @include breakpoint(sp) {
+                    margin-top: 60px;
+                }
+                .items-child{
+                    @include clear;
+                }
+                p{
+                    display: flex;
+                    &.mt{
+                        margin-top: 5px;
+                    }
+                    &.ml{
+                        padding-left: 20px;
+                    }
+                }
+            }
+            .img{
+                float: left;
+                width: 450px;
+                margin-left: 38px;
+                @include breakpoint(sp) {
+                    float: none;
+                    width: 100%;
+                    margin-left: 0;
+                    margin-top: 30px;
+                    &:first-child{
+                        margin-top: 0;
+                    }
+                }
+                &.mt-2{
+                    margin-top: 60px;
+                }
+                img{
+                    margin: 0 auto;
+                    display: table;
+                    width: auto;
+                    margin-top: 30px;
+                    @include breakpoint(sp) {
+                        width: 100%;
+                        margin-left: 0;
+                    }
+                }
+                &:nth-child(2n+1){
+                    clear: left;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    &--shot{
+        .child{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            @include breakpoint(sp) {
+                display: block;
+            }
+        }
+        .c-title--04{
+            margin-bottom: 10px;
+        }
+        .c-youtube{
+            width: 460px;
+            @include breakpoint(sp) {
+                width: 100%;
+                margin-top: 20px;
+                &:first-child{
+                    margin-top: 0;
+                }
+            }
+
+            &__title{
+                font-weight: bold;
+                font-size: 1.6rem;
+                padding-top: 25px;
+                @include breakpoint(sp) {
+                    font-size: 1.4rem;
+                }
+            }
+            &__text{
+                padding-top: 10px;
+            }
+        }
+    }
+}

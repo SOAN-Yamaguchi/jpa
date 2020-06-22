@@ -1,0 +1,88 @@
+/*------------------------------------------------------------
+ Header
+------------------------------------------------------------*/
+.c-header{
+	width: 100%;
+	top: 0;
+	position: fixed;
+	z-index: 10;
+	background:rgba(255,255,255,.6);
+	.logo{
+		img{
+			width: 85px;
+		}
+	}
+	@include breakpoint(sp) {
+		position: fixed;
+		background-color: $white;
+		padding: 0;
+		.l-container{
+			padding: 0;
+		}
+		&.bg{
+			background-color: $red !important;
+			height: 100%;
+			.c-nav{
+				background-color: $white;
+			}
+		}
+	}
+
+}
+@-webkit-keyframes slide_down_menu {
+	0% { top:-60px; }
+	100% { top:0px; }
+  }
+  @keyframes slide_down_menu {
+	0% { top:-60px; }
+	100% { top:0px; }
+}
+
+.c-toggle{
+	width: 30px;
+	height: 20px;
+	position: relative;
+	right: 5px;
+	.menu-item {
+		background-color:$red;
+		width: 100%;
+		height: 2px;
+		display: block;
+		position: absolute;
+		&:first-child{
+			top: 0;
+		}
+		&:nth-child(2) {
+			top: 9px;
+		}
+		&:nth-child(3) {
+			bottom: 0;
+		}
+	}
+	&.open {
+		.menu-item {
+		  &:first-child {
+			transform: rotate(45deg);
+			transform-origin: 10px 50%;
+			top: 5px;
+    		left: 2px;
+		  }
+		  &:nth-child(2) {
+			transform: translateX(40px);
+			opacity: 0;
+		  }
+		  &:nth-child(3) {
+			transform: rotate(-45deg);
+			transform-origin: 8px 50%;
+			bottom: 4px;
+    		left: 3px;
+		  }
+		}
+	}
+	&--close{
+		position: absolute;
+		display: none;
+		right:20px;
+	}
+}
+

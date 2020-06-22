@@ -1,0 +1,100 @@
+- const pageID = "about_jpa";
+doctype html
+html(lang="ja")
+
+  include _includes/_head.pug
+  body
+    .l-wrapper
+        include _includes/_header.pug
+        //breadcrumbs
+        include _includes/_breadcrumbs.pug
+        +breadcrumbs(['ホーム ' ],'JPAについて')
+        main
+            //c-about-jpa
+            section.c-about-jpa
+                .l-container
+                    h2.c-title.c-title--01 #[span 日本パデル協会について]
+                        strong.pc-only ／
+                        |Japan Padel Association
+                    .c-about-jpa__list
+                        h3.c-title.c-title--04 設立趣旨
+                        p.text 日本パデル協会は2016年6月に日本のパデルの普及・発展を目的に設立され、2017年7月に世界パデル連盟（FIP）に正式加盟、2030年までに競技人口100万人達成を目指し活動しております。
+                        table.c-table.c-table--01
+                            tr
+                                td 名称
+                                td 一般社団法人 日本パデル協会（Japan Padel Association）
+                            tr
+                                td 略称
+                                td JPA
+                            tr
+                                td 設立年月
+                                td 2016年6月
+                            tr
+                                td 所在地
+                                td 〒174-0065　東京都板橋区若木
+                            tr
+                                td 連絡先
+                                td
+                                    a.c-link(href="mailto:info@japanpadel.com") info@japanpadel.com
+                            tr
+                                td 名誉会長
+                                td 高橋 陽一（キャプテン翼著者 漫画家）
+                            tr
+                                td 会長
+                                td 中塚 アントニオ 浩二（株式会社DICO 代表取締役）
+                            tr
+                                td 副会長
+                                td 玉井 勝善（株式会社Padel Asia 代表取締役）
+                            tr
+                                td 理事
+                                td 木村 公彦（Petraf合同会社 代表社員 ）
+                                    br
+                                    |高松 伸吾（株式会社Nexus 代表取締役）
+                                    br
+                                    |岩本 義弘（株式会社TSUBASA 代表取締役）
+                            tr
+                                td 法務顧問
+                                td 紙尾 浩道（日比谷見附法律事務所）
+                            tr
+                                td 活動内容
+                                td
+                                    p
+                                        span （１）
+                                        |パデルの認知向上、普及、振興
+                                    p
+                                        span （2）
+                                        |ジャパンパデルツアーをはじめとする大会の企画、開催、後援、公認
+                                    p
+                                        span （3）
+                                        |国際大会の開催、国際大会へ派遣する代表選手選考及び育成
+                                    p
+                                        span （4）
+                                        |パデル競技力向上、指導者育成に向けた検定や講習の開催
+                                    p
+                                        span （5）
+                                        |パデル関連事業発展のために必要な事業
+                            tr
+                                td 3つのビジョン
+                                td
+                                    p
+                                        span （１）
+                                        |パデルの普及促進と日本パデルの水準向上！
+                                    p
+                                        span （２）
+                                        |アジアのリーダーとしての自覚を持ち
+                                        br
+                                        | 国際社会における交流及び親善への貢献！
+                                    p
+                                        span （３）
+                                        |パデルを通じてコミュニティーを創り
+                                        br
+                                        | 笑顔を創り、日本を元気に！
+                            
+
+            //end c-about-jpa
+        include _includes/_footer.pug
+    //js
+    each items in pagesJsFiles
+      script(src=assetsPath + items)
+
+

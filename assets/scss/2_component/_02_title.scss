@@ -1,0 +1,112 @@
+/*------------------------------------------------------------
+title
+------------------------------------------------------------*/
+
+
+/*
+------------------------------------------------------------*/
+.c-title{
+	&--01{
+		font-family: $mb31;
+		font-size: 2.4rem;
+		position: relative;
+		letter-spacing: 3px;
+		span{
+			position: relative;
+			&:after{
+				content: '';
+				height: 3px;
+				width: 100%;
+				background-color: $red;
+				position: absolute;
+				left: 0;
+				bottom: -7px;
+				z-index: 1;
+			}
+			&.blue{
+				&:after{
+					background-color: $blue;
+				}
+			}
+			&.green{
+				&:after{
+					background-color: $green;
+				}
+			}
+			&.orange{
+				&:after{
+					background-color: $orange;
+				}
+			}
+			&.pink{
+				&:after{
+					background-color: $pink;
+				}
+			}
+			&.purple{
+				&:after{
+					background-color: $purple;
+				}
+			}
+		}
+		&:after{
+			content: '';
+			height: 3px;
+			width: 100%;
+			background-color: $whiteSmoke;
+			position: absolute;
+			left: 0;
+			bottom: -5px;
+		}
+	}
+	&--02{
+		font-size: 2.5rem;
+		font-family: $mont;
+	}
+	&--03{
+		font-family:$mb31;
+		font-size: 1.6rem;
+		font-weight: 700;
+		display: table;
+		position: relative;
+		margin: 0 auto;
+		.border{
+			position: relative;
+			&:after{
+				content: '';
+				position: absolute;
+				height: 6px;
+				width: 100%;
+				left: 0;
+				bottom: -5px;
+				background-color: $whiteSmoke2;
+			}
+		}
+		&:before, &:after{
+			content: '';
+			height:15px;
+			width: 2px;
+			position: absolute;
+			background-color: $nightRider;
+		}
+		&:before{
+			left: -7px;
+			top: 5px;
+			transform: rotate(150deg);
+		}
+		&:after{
+			right: -8px;
+			top: 5px;
+			transform: rotate(-150deg);
+		}
+	}
+	&--04{
+		font-family: $mb31;
+		font-size: 2rem;
+		display: inline-block;
+		border:solid 2px $nightRider;
+		padding:1px 8px;
+		box-sizing: border-box;
+		line-height: 30px;
+	}
+}

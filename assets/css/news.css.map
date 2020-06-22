@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAEA;;8DAE8D;AAGzD,AAAD,aAAO,CAAA;EACH,UAAU,EAAE,IAAI;CAInB;;AEQH,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;EFbrC,AAAD,aAAO,CAAA;IAGC,UAAU,EAAE,IAAI;GAEvB;;;AANL,AAQQ,OARD,CAQE,UAAI,CAAA;EACD,UAAU,EAAE,IAAI;CAInB;;AECP,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;EFd1C,AAQQ,OARD,CAQE,UAAI,CAAA;IAGG,UAAU,EAAE,IAAI;GAEvB",
+    "sources": [
+        "../scss/news.scss",
+        "../scss/0_base/_vars.scss",
+        "../scss/0_base/_mixin.scss"
+    ],
+    "names": [],
+    "file": "news.css"
+}

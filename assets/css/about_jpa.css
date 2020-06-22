@@ -1,0 +1,64 @@
+/*------------------------------------------------------------
+Css of about jpa pages
+------------------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+  .c-about-jpa .c-title--01 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+  .c-about-jpa .c-title--01 span {
+    display: block;
+    font-size: 2.4rem;
+  }
+  .c-about-jpa .c-title--01 span:after {
+    bottom: -33px;
+    width: 160px;
+  }
+  .c-about-jpa .c-title--01:after {
+    bottom: -10px;
+  }
+}
+
+.c-about-jpa__list {
+  margin-top: 50px;
+}
+
+.c-about-jpa__list .text {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-about-jpa__list .c-table--01 {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .c-about-jpa__list .c-table--01 tr {
+    margin-top: 0;
+  }
+}
+
+.c-about-jpa__list .c-table--01 td:first-child {
+  font-weight: bold;
+  width: 220px;
+  background-color: #e9e6db;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-about-jpa__list .c-table--01 td:first-child {
+    width: 100%;
+    padding: 9px 10px;
+  }
+}
+
+.c-about-jpa__list .c-table--01 td p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-about-jpa__list .c-table--01 td p span {
+  width: 35px;
+}
+/*# sourceMappingURL=about_jpa.css.map */
