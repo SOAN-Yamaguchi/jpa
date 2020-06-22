@@ -28,13 +28,15 @@ Css of charm, shot, rule pages
         .c-list{
             &--imgs{
                 @include clear;
-                img{
+                .img-cover{
                     width: 300px;
+                    height: 300px;
                     float: left;
                     margin-left: 20px;
                     margin-bottom: 20px;
                     @include breakpoint(sp) {
                         width: 33.33%;
+                        height: 30vw;
                         margin-left: 0;
                         margin-bottom: 0;
 					}

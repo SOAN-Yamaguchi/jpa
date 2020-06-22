@@ -74,18 +74,23 @@ footer
 				}
 				&:nth-child(5),&:first-child{
 					width: 110px;
+					margin-right: 32px;
 					@include breakpoint(sp) {
 						width: 50%;
-					}
-				}
-				&:nth-child(3),&:nth-child(7){
-					margin-right: 47px;
-					@include breakpoint(sp) {
 						margin-right: 0;
 					}
 				}
-				&:nth-child(2),&:nth-child(6){
-					margin-left: 10px;
+			
+				&:nth-child(3),&:nth-child(7){
+					margin-left: 20px;
+					margin-right: 17px;
+					@include breakpoint(sp) {
+						margin-left: 0;
+						margin-right: 0;
+					}
+				}
+				&:last-child{
+					margin-left: 20px;
 					@include breakpoint(sp) {
 						margin-left: 0;
 					}

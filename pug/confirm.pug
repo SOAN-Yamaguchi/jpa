@@ -1,4 +1,4 @@
-- const pageID = "contact_us";
+- const pageID = "contact_confirm";
 doctype html
 html(lang="ja")
 
@@ -7,13 +7,19 @@ html(lang="ja")
     .l-wrapper
         include _includes/_header.pug
         //breadcrumbs
-        include _includes/_breadcrumbs.pug
-        +breadcrumbs(['ホーム ' ],'お問い合わせ')
+        nav.c-breadcrumbs
+            .l-container
+                ol.breadcrumb
+                    li.breadcrumb__item
+                        a(href="./") ホーム
+                    li.breadcrumb__item
+                        a(href="./contact.html") お問い合わせ
+                    li.breadcrumb__item.active 入力内容確認
         main
             //c-contact
-            section.c-contact
+            section.c-contact.c-contact--confirm
                 .l-container
-                    h2.c-title.c-title--01 #[span お問い合わせ]
+                    h2.c-title.c-title--01 #[span 入力内容確認]
                     .c-contact__list
                         p.text ご意見、ご感想などがありましたら、以下の欄にご記入の上、送信してください。
                             br
@@ -22,18 +28,16 @@ html(lang="ja")
                             table.c-table.c-table--01
                                 tr
                                     td お名前
-                                    td
-                                        input(type="text" name="name" placeholder="お名前が入ります")
+                                    td お名前
                                 tr
                                     td メールアドレス
-                                    td
-                                        input(type="email" name="email" placeholder="メールアドレスが入ります")
+                                    td メールアドレス
                                 tr
                                     td コメント
-                                    td
-                                        textarea(name="contents" placeholder="コメントが入ります")
+                                    td コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。コメントが入ります。
                             .c-btn-bottom
-                                button.c-btn.c-btn--01(type="submit") 確認
+                                a(href="./contact.html").c-btn.c-btn--01 戻る
+                                a(href="./complete.html").c-btn.c-btn--01.red 送信
             //end c-contact
         include _includes/_footer.pug
     //js

@@ -1,6 +1,16 @@
 /*------------------------------------------------------------
 Css of contact pages
 ------------------------------------------------------------*/
+.c-contact--confirm .c-btn-bottom .c-btn--01 {
+  margin: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-contact--confirm .c-btn-bottom .c-btn--01 {
+    width: calc(50% - 10px);
+  }
+}
+
 .c-contact__list {
   margin-top: 50px;
 }
@@ -19,6 +29,14 @@ Css of contact pages
   .c-contact__list .c-table--01 tr {
     margin-top: 0;
   }
+}
+
+.c-contact__list .c-table--01 tr:last-child td {
+  vertical-align: top;
+}
+
+.c-contact__list .c-table--01 td {
+  vertical-align: middle;
 }
 
 .c-contact__list .c-table--01 td:first-child {
@@ -44,13 +62,46 @@ Css of contact pages
   width: 35px;
 }
 
+.c-contact .c-btn-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 420px;
+  margin: auto auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-contact .c-btn-bottom {
+    width: 100%;
+  }
+}
+
 .c-contact .c-btn--01 {
   width: 200px;
   height: 50px;
   line-height: 50px;
-  background-color: #ffffff;
+  display: inline-block;
   cursor: pointer;
-  margin-top: 30px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  border-radius: 0;
+}
+
+.c-contact .c-btn--01.red {
+  background-color: #e70012;
+  border-color: #e70012;
+  color: #ffffff;
+}
+
+.c-contact .c-btn--01.red:hover {
+  background-color: #e70012;
+  border-color: #e70012;
+  color: #ffffff;
 }
 
 .c-contact .c-btn--01:hover {

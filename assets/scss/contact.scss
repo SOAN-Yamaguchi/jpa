@@ -4,6 +4,16 @@
 Css of contact pages
 ------------------------------------------------------------*/
 .c-contact{
+    &--confirm{
+        .c-btn-bottom{
+            .c-btn--01{
+                margin: 0;
+                @include breakpoint(sp) {
+                    width: calc(50% - 10px);
+                }
+            }
+        }
+    }
     &__list{
         margin-top: 50px;
         .text{
@@ -17,8 +27,14 @@ Css of contact pages
                 @include breakpoint(sp) {
                     margin-top: 0;
                 }
+                &:last-child{
+                    td{
+                        vertical-align: top;
+                    }
+                }
             }
             td{
+                vertical-align: middle;
                 &:first-child{
                     font-weight: bold;
                     width: 220px;
@@ -37,13 +53,36 @@ Css of contact pages
             }
         }
     }
+    .c-btn-bottom{
+        display: flex;
+        justify-content: space-between;
+        width: 420px;
+        margin: auto auto;
+        margin-top: 30px;
+        text-align: center;
+        @include breakpoint(sp) {
+            width: 100%;
+        }
+    }
     .c-btn--01{
         width: 200px;
         height: 50px;
         line-height: 50px;
-        background-color: $white;
+        display: inline-block;
         cursor: pointer;
-        margin-top: 30px;
+        background-color: $white;
+        margin: 0 auto;
+        border-radius: 0;
+        &.red{
+            background-color: $red;
+            border-color:$red;
+            color:$white;
+            &:hover{
+                background-color: $red;
+                border-color:$red;
+                color:$white;
+            }
+        }
         &:hover{
             background-color: $red;
             color:$white

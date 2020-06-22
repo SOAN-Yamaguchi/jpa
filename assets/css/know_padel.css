@@ -29,22 +29,24 @@ Css of charm, shot, rule pages
   clear: both;
 }
 
-.c-know-padel--charm .c-list--imgs img {
+.c-know-padel--charm .c-list--imgs .img-cover {
   width: 300px;
+  height: 300px;
   float: left;
   margin-left: 20px;
   margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 767px) {
-  .c-know-padel--charm .c-list--imgs img {
+  .c-know-padel--charm .c-list--imgs .img-cover {
     width: 33.33%;
+    height: 30vw;
     margin-left: 0;
     margin-bottom: 0;
   }
 }
 
-.c-know-padel--charm .c-list--imgs img:nth-child(3n+1) {
+.c-know-padel--charm .c-list--imgs .img-cover:nth-child(3n+1) {
   clear: left;
   margin-left: 0;
 }

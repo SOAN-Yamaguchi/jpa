@@ -1,0 +1,35 @@
+- const pageID = "contact_complete";
+doctype html
+html(lang="ja")
+
+  include _includes/_head.pug
+  body
+    .l-wrapper
+        include _includes/_header.pug
+        //breadcrumbs
+        nav.c-breadcrumbs
+            .l-container
+                ol.breadcrumb
+                    li.breadcrumb__item
+                        a(href="./") ホーム
+                    li.breadcrumb__item
+                        a(href="./contact.html") お問い合わせ
+                    li.breadcrumb__item.active 送信完了
+        main
+            //c-contact
+            section.c-contact
+                .l-container
+                    h2.c-title.c-title--01 #[span 入力内容確認]
+                    .c-contact__list
+                        p.text お問い合わせいただきありがとうございました。
+                            br
+                            |こちらを任意の文言に変更してご利用ください。
+                        .c-btn-bottom
+                            a(href="./").c-btn.c-btn--01 ホームへ
+            //end c-contact
+        include _includes/_footer.pug
+    //js
+    each items in pagesJsFiles
+      script(src=assetsPath + items)
+
+

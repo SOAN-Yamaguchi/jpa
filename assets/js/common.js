@@ -29,7 +29,11 @@ $(document).ready(function(){
         $('body').removeClass('isOverflow');
         recoverScrolling();
     });
-
+    $(window).resize(function() {
+        if ($(window).width() >767) {
+            recoverScrolling();
+        }
+    });
     function clickAccordion(){
         $(".icon-sub > a").click(function () {
             if($(window).width() < 767){
@@ -78,7 +82,7 @@ $(document).ready(function(){
         return scrollbarWidth;
     }
 
-    //Smooth scroll to div id 
+    //Smooth scroll to div id
     $('a[href*="#"]').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
