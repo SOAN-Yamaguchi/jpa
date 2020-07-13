@@ -1,0 +1,61 @@
+/*------------------------------------------------------------
+Css of registration pages
+------------------------------------------------------------*/
+.c-registration .item {
+  margin-top: 60px;
+  word-break: break-all;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-registration .item {
+    margin-top: 30px;
+  }
+}
+
+.c-registration .item:nth-child(2) {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-registration .item:nth-child(2) {
+    margin-top: 50px;
+  }
+}
+
+.c-registration .item .c-title--04 {
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-registration .item .c-title--04 {
+    margin-bottom: 20px;
+  }
+}
+
+.c-registration .item a {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.c-registration .item a:hover {
+  color: #e70012;
+  border: 0;
+}
+
+.c-registration .item .c-table--01 {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .c-registration .item .c-table--01 {
+    margin-top: -15px;
+  }
+}
+
+.c-registration .item .c-table--01 tr:first-child {
+  margin-top: 0;
+}
+
+.c-registration .item .c-table--01 .c-link {
+  border: 0;
+}
+/*# sourceMappingURL=registration.css.map */
